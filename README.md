@@ -14,5 +14,5 @@ This repo lets you meet this requirement by having your own standalone page on [
 
 2. Add an "index.html" file with your AdWords splash page
 
-3. Configure your AdWords ad to point to http://splash.codeforamerica.org/PROJECTNAME/
+3. Configure your AdWords ad to point to http://splash.codeforamerica.org/PROJECTNAME/LANGUAGE/
 
