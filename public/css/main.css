@@ -41,6 +41,7 @@ body {
 }
 
 .b-intro{
+  margin-bottom: 1em;
 }
 .b-intro > h2{
   font-size: 2em;
