@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include balance-header.html %}
+  <body>
+    <header>
+      <div class="col-lg-12 col-sm-12 col-xs-12 b-header">
+        <div class="col-lg-8 col-lg-offset-1 col-sm-12 col-xs-12 b-header-text">
+          <h1>Check your food stamp balance now.</h1>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="row">
+
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 b-intro">
+            <h2>Text your 16-digit EBT card number to {{ page.content }} to check your balance.</h2>
+            <p><i>Standard text messaging rates apply.</i></p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 b-screenshot">
+            <img src="../../../public/img/Balance-phone-english-no-cash.png" height="350px" alt="Hi! Your food stamp balance is $133.57.">
+          </div>
+
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <div class="b-footer">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-6 col-xs-12 footer-left" >
+          <img src="../../../public/img/flagtag.png";><h4>A project by Code for America</h4>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-right">
+          <h4><a href="https://github.com/codeforamerica/balance">Contribute on Github.</a></h4>
+        </div>
+      </div>
+    </div>
+    {% include balance-footer.html %}
+    </body>
+</html>
