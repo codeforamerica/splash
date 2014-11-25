@@ -19,9 +19,11 @@
     <!-- Stylesheet -->
     <!-- NOTE THE NEW NESTING FOR JEKYLL BUILDS  -->
     <link rel="stylesheet" href="../../../public/css/main.css">
+    <script type="text/javascript" src="../../../public/js/form.js"></script>
 
     <script type="text/javascript" src="//use.typekit.net/fno8zyj.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
   <body>
     <header>
@@ -35,12 +37,21 @@
       <div class="col-lg-10 col-lg-offset-1">
         <div class="row">
 
-          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 b-intro">
-            <h2>Enviar el numero de tarjeta EBT de 16 dígitos  por texto a (323)-400-6295 para verificar el saldo.</h2>
-            <p><i>Se aplican las tarifas estándar de mensajería de texto.</i></p>
+          <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 b-intro">
+            <form accept-charset="UTF-8" action="https://balance-production.herokuapp.com/welcome" method="POST">
+                    <label>Enter your cell phone number</label>
+                    <input id="texter_phone_number" class="form-control b-phone-number" name="texter_phone_number" type="tel" placeholder="555-555-5555">
+
+                    <!-- Staging -->
+                    <!-- <input id="inbound_twilio_number" name="inbound_twilio_number" type="hidden" value="+13234006295"> -->
+
+                    <!-- Production -->
+                    <input id="inbound_twilio_number" name="inbound_twilio_number" type="hidden" value="+13234006295">
+              <input type="submit" value="Text me my balance" class="btn btn-primary b-phone-number-submit">
+            </form>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 b-screenshot">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 b-screenshot">
             <img src="../../../public/img/Balance-phone-spanish.png" height="350px" alt="
             ¡Hola! El saldo de su cuenta de estampillas para comida es ¡Hola! El saldo de su cuenta de estampillas para comida es {} y su balance de dinero en efectivo es $25.60.">
           </div>

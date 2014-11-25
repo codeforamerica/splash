@@ -1,66 +1,66 @@
+/* Mobile-first styles*/
+
 h1, h2, h3, h4, h5, h6, p {
 	font-family: "proxima-nova-condensed", helvetica, sans serif;
+  color: #333
 }
 
 body {
   background-color: #81D300;
 }
+
 .container-fluid {
   min-height: 500px;
-  background-color: white;
   padding-bottom: 2em;
+  background-color: white;
+}
+
+.b-header-background {
+  background-color: #81D300;
 }
 
 .b-header {
- background-color: #81D300;
- padding-top: 30px;
- padding-bottom: 30px;
- margin-bottom: 30px;
-}
-.b-header > div > h1 {
- font-size: 2.5em;
- font-weight: bold;
- color: black;
-}
-.b-header > div > h2 {
- font-size: 4em;
- color: black;
- font-weight: lighter;
+  background-color: #81D300;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
-.b-states {
-  padding-top: 20px;
-}
-.b-state {
-  display: inline-block;
-  margin-right: 20px;
+.b-header-text {
+  text-align: center;
 }
 
-.b-state > p {
- font-size: 1em;
+.b-header .b-header-text h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: black;
 }
 
 .b-intro{
+  text-align: center;
   margin-bottom: 1em;
 }
+
 .b-intro > h2{
   font-size: 2em;
 }
-.b-contact{
-  margin-top: 75px;
-}
-.b-contact > p > a {
-  color: #2E993E;
-}
+
 .b-contact > p {
   font-size: 1.5em;
-}
-.b-screenshot {
 }
 
 .b-screenshot > img {
   display: block;
   margin: 0 auto;
+}
+
+.b-phone-number {
+  padding: 1.5em;
+  margin: 1em 0;
+}
+
+.b-phone-number-submit {
+  padding: 1em;
 }
 
 .b-footer{
@@ -71,8 +71,11 @@ body {
   font-size: 1em;
 }
 
+.b-footer .footer-left {
+  text-align: center;
+}
 .b-footer .footer-right {
-  text-align: right;
+  text-align: center;
 }
 
 .b-footer img, h4 {
@@ -82,20 +85,49 @@ body {
 
 .b-footer img {
   height: 1em;
+  margin: 0 auto;
 }
 
 .b-footer > h4 > a {
-	color: black;
+	color: #333;
 }
 
-.test {background-color: red !important; height: 500px;}
+/* Small MQ not necessary, mobile-first. */
+/*@media screen and (min-width: 48em) {
+}*/
 
-
-@media only screen and (min-width : 320px) and (max-width : 768px) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  .b-header-text {
+    text-align: left;
+  }
+  .b-intro {
+    text-align: left;
+  }
+  .b-screenshot > img {
+    float: right;
+  }
   .b-footer .footer-left {
-    text-align: center;
+    text-align: left;
   }
   .b-footer .footer-right {
-    text-align: center;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .b-header-text {
+    text-align: left;
+  }
+  .b-intro {
+    text-align: left;
+  }
+  .b-screenshot > img {
+    float: right;
+  }
+  .b-footer .footer-left {
+    text-align: left;
+  }
+  .b-footer .footer-right {
+    text-align: right;
   }
 }
