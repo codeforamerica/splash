@@ -21,9 +21,8 @@ body {
 
 .b-header {
   background-color: #81D300;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 2em;
-  margin-bottom: 2em;
 }
 
 .b-header-text {
@@ -38,6 +37,7 @@ body {
 
 .b-intro{
   text-align: center;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 
@@ -47,6 +47,10 @@ body {
 
 .b-contact > p {
   font-size: 1.5em;
+}
+
+.b-screenshot {
+  margin-top: 2em;
 }
 
 .b-screenshot > img {
@@ -105,12 +109,6 @@ body {
   }
   .b-screenshot > img {
     float: right;
-  }
-  .b-footer .footer-left {
-    text-align: left;
-  }
-  .b-footer .footer-right {
-    text-align: right;
   }
 }
 
