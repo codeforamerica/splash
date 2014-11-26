@@ -110,6 +110,9 @@ body {
   .b-screenshot > img {
     float: right;
   }
+  .b-footer .footer-right {
+    text-align: right;
+  }
 }
 
 @media screen and (min-width: 64em) {

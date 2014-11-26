@@ -28,18 +28,20 @@
   <body>
     <header>
       <div class="col-lg-12 col-sm-12 col-xs-12 b-header">
-        <div class="col-lg-8 col-lg-offset-1 col-sm-12 col-xs-12 b-header-text">
-          <h1>Revisar saldo de Estampillas Para Comida ahora mismo.</h1>
+        <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 b-header">
+          <div class="b-header-text">
+            <h1>Revisar saldo de Estampillas Para Comida ahora mismo.</h1>
+          </div>
         </div>
       </div>
     </header>
     <div class="container-fluid">
-      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2">
         <div class="row">
 
           <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 b-intro">
             <form accept-charset="UTF-8" action="https://balance-production.herokuapp.com/welcome" method="POST">
-                    <label>Enter your cell phone number</label>
+                    <label>Enviar su número de teléfono celular</label>
                     <input id="texter_phone_number" class="form-control b-phone-number" name="texter_phone_number" type="tel" placeholder="555-555-5555">
 
                     <!-- Staging -->
@@ -47,7 +49,7 @@
 
                     <!-- Production -->
                     <input id="inbound_twilio_number" name="inbound_twilio_number" type="hidden" value="+12106258202">
-              <input type="submit" value="Text me my balance" class="btn btn-primary b-phone-number-submit">
+              <input type="submit" value="Texto mí mi saldo " class="btn btn-primary b-phone-number-submit">
             </form>
           </div>
 
