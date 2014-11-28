@@ -16,12 +16,9 @@
         <div class="row">
 
           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 b-intro">
-            <form accept-charset="UTF-8" action="https://balance-production.herokuapp.com/welcome" method="POST">
+            <form accept-charset="UTF-8" onsubmit="trackBalanceConv();" action="https://balance-production.herokuapp.com/welcome" method="POST">
                     <label>Enter your cell phone number</label>
                     <input id="texter_phone_number" class="form-control b-phone-number" name="texter_phone_number" type="tel" placeholder="555-555-5555">
-
-                    <!-- Staging -->
-                    <!-- <input id="inbound_twilio_number" name="inbound_twilio_number" type="hidden" value="{{ page.content }}"> -->
 
                     <!-- Production -->
                     <input id="inbound_twilio_number" name="inbound_twilio_number" type="hidden" value="{{ page.content }}">
@@ -48,5 +45,6 @@
       </div>
     </div>
     {% include balance-footer.html %}
+    <script type="text/javascript" src="../../../public/js/balance-conversion.js"></script>
     </body>
 </html>
